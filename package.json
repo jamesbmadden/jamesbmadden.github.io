@@ -6,7 +6,7 @@
   "scripts": {
     "copy-wgpu": "cp -R rust/target/generated/. web/src/background",
     "start": "snowpack dev",
-    "build": "snowpack build",
+    "build": "snowpack build && touch web/build/.nojekyll",
     "deploy": "gh-pages -d web/build -b master"
   },
   "author": "James Madden",
