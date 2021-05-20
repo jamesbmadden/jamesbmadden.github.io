@@ -1,0 +1,15 @@
+[package]
+name = "jm-background"
+version = "0.1.0"
+authors = ["James Madden <jamesbmadden@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+winit = { version = "0.24", features = [ "web-sys" ] }
+wgpu = { version = "0.8.1", features = [ "webgl" ] }
+futures = "0.3"
+wasm-bindgen-futures = "0.4.23"
+colorsys = "0.6.3"
+bytemuck = { version = "1.5.1", features = [ "derive" ] }
+web-sys = { version = "0.3.50", features = [ "console" ] }
+console_error_panic_hook = "0.1.6"

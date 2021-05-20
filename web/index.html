@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;0,900;1,400;1,900&display=swap" rel="stylesheet"> 
+    <style>
+      body { background: rgb(250, 141, 0); font-family: 'Bodoni Moda', serif; }
+      canvas {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100% !important; height: 100% !important;
+        pointer-events: none;
+      }
+    </style>
+    <title>James Madden</title>
+  </head>
+  <body>
+    <jbm-root></jbm-root>
+    <!-- Eventually we'll get lit to build to static ;) -->
+    <script src="./src/background/spirv_cross_wrapper_glsl.js"></script>
+    <script type="module">
+      import init from "./src/background/jm-background.js";
+
+      window.addEventListener("load", () => {
+        const module = window.sc_internal_wrapper().then(module => {
+          window.sc_internal = module;
+          init().then(() => {
+            // background loaded, rendering about to start
+          });
+        });
+      });
+    </script>
+    <script src="./src/script.js" type="module"></script>
+  </body>
+</html>
