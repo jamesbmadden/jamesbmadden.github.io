@@ -1,4 +1,5 @@
 import { LitElement, html } from 'lit';
+import './components/image-card/image-card.js';
 
 window.addEventListener('wheel', event => {
   event.stopPropagation();
@@ -65,10 +66,8 @@ class Root extends LitElement {
           grid-template-columns: repeat(4, 1fr);
           grid-gap: 1.5rem;
         }
-        img {
-          width: 100%;
-          border-radius: 8px;
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        img-card {
+          position: relative;
         }
       </style>
       <div class="titles">
@@ -79,10 +78,10 @@ class Root extends LitElement {
       <h2 class="section-header">Projects</h2>
       <section id="projects" style="padding-bottom: 100vh">
         <div class="projects-grid">
-          <img src="./assets/james_madden.png" alt="James Madden Website" />
-          <img src="./assets/worldxplore.png" alt="WorldXPlore" />
-          <img src="./assets/homework_app.png" alt="Homework Manager" />
-          <img src="./assets/more.svg" alt="More" />
+          <img-card src="./assets/james_madden.png" title="James Madden Website"></img-card>
+          <img-card src="./assets/worldxplore.png" title="WorldXPlore"></img-card>
+          <img-card src="./assets/homework_app.png" title="Homework Manager"></img-card>
+          <img-card src="./assets/more.svg" title="More"></img-card>
         </div>
       </section>
     `;

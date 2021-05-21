@@ -1,0 +1,30 @@
+img {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  cursor: pointer;
+
+  transform: translateY(0);
+  transition: transform 0.2s;
+}
+img:hover {
+  transform: translateY(-1rem);
+}
+
+.image-description {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 110%; padding-top: 82.5%;
+  left: -5%; top: -5%;
+  background: white;
+  border-radius: 8px;
+  transform: scale(0) translateY(0);
+  transition: transform 0.2s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+img:hover ~ .image-description {
+  transform: scale(1) translateY(-1rem);
+}
