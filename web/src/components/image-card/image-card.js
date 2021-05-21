@@ -7,14 +7,21 @@ export default class ImageCard extends LitElement {
   static get properties () { return {
     src: { type: String },
     title: { type: String },
-    bio: { type: String }
+    bio: { type: String },
+    tags: { type: Array }
   }};
 
   render () {
     return html`
-      <img src=${this.src} alt="" />
+      <img src=${this.src} alt="" tabindex="0" />
       <div class="image-description">
         <h2>${this.title}</h2>
+        <p class="bio">${this.bio}</p>
+        <p class="tags">
+          ${this.tags?.map(tag => html`
+            <span class="chip">${tag}</span>
+          `)}
+        </p>
       </div>
     `;
   }
