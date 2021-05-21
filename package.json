@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "description": "My Personal Website",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "copy-wgpu": "cp -R rust/target/generated/. web/src/background",
     "start": "snowpack dev",
-    "build": "snowpack build && touch web/build/.nojekyll",
+    "build": "snowpack build && node ssr/render.js",
     "deploy": "gh-pages -d web/build -b master"
   },
   "author": "James Madden",
   "license": "MIT",
   "devDependencies": {
+    "@lit-labs/ssr": "^1.0.0-rc.1",
     "gh-pages": "^3.1.0",
     "snowpack": "^3.5.0",
     "snowpack-plugin-raw": "^1.0.0"
