@@ -1,4 +1,5 @@
 import { LitElement, html } from '../_snowpack/pkg/lit.js';
+import projects from './data/projects.js';
 import './components/image-card/image-card.js';
 
 window.addEventListener('wheel', event => {
@@ -79,9 +80,9 @@ class Root extends LitElement {
       <h2 class="section-header">Projects</h2>
       <section id="projects" style="padding-bottom: 100vh">
         <div class="projects-grid">
-          <img-card src="./assets/james_madden.png" title="James Madden Website" bio="Plasma background using WGPU" .tags=${['Web', 'Rust', 'WebGPU']}></img-card>
-          <img-card src="./assets/worldxplore.png" title="WorldXPlore" bio="Randomly generated game built with WGPU" .tags=${['Rust', 'WebGPU', 'Game']}></img-card>
-          <img-card src="./assets/homework_app.png" title="Homework Manager" bio="Firebase-powered PWA built for managing homework" .tags=${['Web', 'PWA', 'Firebase']}></img-card>
+          <img-card src=${projects[0].img} title=${projects[0].title} bio=${projects[0].bio} .tags=${projects[0].tags} postUrl=${projects[0].post}></img-card>
+          <img-card src=${projects[1].img} title=${projects[1].title} bio=${projects[1].bio} .tags=${projects[1].tags} postUrl=${projects[1].post}></img-card>
+          <img-card src=${projects[2].img} title=${projects[2].title} bio=${projects[2].bio} .tags=${projects[2].tags} postUrl=${projects[2].post}></img-card>
           <img-card src="./assets/more.svg" title="More"></img-card>
         </div>
       </section>

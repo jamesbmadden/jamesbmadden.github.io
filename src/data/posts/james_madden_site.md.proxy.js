@@ -1,0 +1,1 @@
+export default "/src/data/posts/james_madden_site.md";
