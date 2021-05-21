@@ -31,6 +31,7 @@ class Root extends LitElement {
         }
         
         .section-header {
+          font-family: 'Lato', sans-serif;
           box-sizing: border-box;
           font-size: 3rem;
           color: white;
@@ -78,9 +79,9 @@ class Root extends LitElement {
       <h2 class="section-header">Projects</h2>
       <section id="projects" style="padding-bottom: 100vh">
         <div class="projects-grid">
-          <img-card src="./assets/james_madden.png" title="James Madden Website"></img-card>
-          <img-card src="./assets/worldxplore.png" title="WorldXPlore"></img-card>
-          <img-card src="./assets/homework_app.png" title="Homework Manager"></img-card>
+          <img-card src="./assets/james_madden.png" title="James Madden Website" bio="Plasma background using WGPU" .tags=${['Web', 'Rust', 'WebGPU']}></img-card>
+          <img-card src="./assets/worldxplore.png" title="WorldXPlore" bio="Randomly generated game built with WGPU" .tags=${['Rust', 'WebGPU', 'Game']}></img-card>
+          <img-card src="./assets/homework_app.png" title="Homework Manager" bio="Firebase-powered PWA built for managing homework" .tags=${['Web', 'PWA', 'Firebase']}></img-card>
           <img-card src="./assets/more.svg" title="More"></img-card>
         </div>
       </section>
