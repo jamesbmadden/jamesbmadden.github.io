@@ -8,7 +8,7 @@ module.exports = {
     /* ... */
   },
   plugins: [
-    /* ... */
+    ["snowpack-plugin-raw", { extensions: [".css"] }]
   ],
   packageOptions: {
     /* ... */
