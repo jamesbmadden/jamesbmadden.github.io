@@ -27,21 +27,10 @@ export default function withBoilerplate (component) {
           <title>James Madden</title>
         </head>
         <body>
+          <canvas alt="Plasma Background"></canvas>
           ${component}
           <!-- Eventually we'll get lit to build to static ;) -->
-          <script src="./src/background/spirv_cross_wrapper_glsl.js"></script>
-          <script type="module">
-            import init from "./src/background/jm-background.js";
-
-            window.addEventListener("load", () => {
-              const module = window.sc_internal_wrapper().then(module => {
-                window.sc_internal = module;
-                init().then(() => {
-                  // background loaded, rendering about to start
-                });
-              });
-            });
-          </script>
+          <script src="./src/background/background.js"></script>
           <!-- <script src="./src/script.js" type="module"></script> -->
         </body>
       </html>
