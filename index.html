@@ -1,4 +1,4 @@
-<!--lit-part aZ5v168g/2g=-->
+<!--lit-part BDfAOeLCpdE=-->
     <!DOCTYPE html>
       <html>
         <head>
@@ -24,6 +24,7 @@
           <title>James Madden</title>
         </head>
         <body>
+          <canvas alt="Plasma Background"></canvas>
           <!--lit-part 9WVmu7py/Rs=--><jbm-root><shadow-root shadowroot="open"><style>
     .titles {
       mix-blend-mode: difference;
@@ -366,19 +367,7 @@ img:hover ~ .image-description {
       </section>
     <!--/lit-part--></shadow-root></jbm-root><!--/lit-part-->
           <!-- Eventually we'll get lit to build to static ;) -->
-          <script src="./src/background/spirv_cross_wrapper_glsl.js"></script>
-          <script type="module">
-            import init from "./src/background/jm-background.js";
-
-            window.addEventListener("load", () => {
-              const module = window.sc_internal_wrapper().then(module => {
-                window.sc_internal = module;
-                init().then(() => {
-                  // background loaded, rendering about to start
-                });
-              });
-            });
-          </script>
+          <script src="./src/background/background.js"></script>
           <!-- <script src="./src/script.js" type="module"></script> -->
         </body>
       </html>
