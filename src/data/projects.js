@@ -9,8 +9,8 @@ const projects = [
   {
     title: "James Madden Website",
     img: "./assets/james_madden.png",
-    bio: "Plasma background using WGPU",
-    tags: ['Web', 'Rust', 'WebGPU'],
+    bio: "Plasma background using WebGL",
+    tags: ['Web', 'Lit', 'WebGL'],
     post: JamesMaddenPostUrl
   },
   {
