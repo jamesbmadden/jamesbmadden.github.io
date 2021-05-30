@@ -79,8 +79,8 @@ lowp vec4 get_colour(vec4 pos, lowp float time2) {
     lowp float intensity_offset_y;
     lowp float h1;
     lowp float l1;
-    x1 = ((((pos.x + 1.0) / tile_size) - 50.5) / 600.0);
-    y = ((((pos.y + 1.0) / tile_size) - 50.5) / 600.0);
+    x1 = ((((pos.x + 1.0) / tile_size) - 50.5) / 200.0);
+    y = ((((pos.y + 1.0) / tile_size) - 50.5) / 200.0);
     offset_x = (x1 + (time2 / 2.0));
     offset_y = (y + (time2 / 2.0));
     intensity_offset_y = (y - (time2 / 2.0));
