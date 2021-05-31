@@ -2,7 +2,7 @@ import { LitElement, html, css } from 'lit';
 import projects from './data/projects.js';
 import './components/image-card/image-card.js';
 
-import styles from './jm-root.css';
+import styles from './jbm-root.css';
 
 export default class Root extends LitElement {
 
