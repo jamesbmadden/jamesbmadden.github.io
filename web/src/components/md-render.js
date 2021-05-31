@@ -9,11 +9,10 @@ export class Markdown extends LitElement {
     }
   }
 
-  connectedCallback () {
-    super.connectedCallback();
-    this.shadowRoot.innerHTML = marked(this.md);
+  render () {
+    return html([marked(this.md)]);
   }
-  
+
 }
 
 customElements.define('md-render', Markdown);
