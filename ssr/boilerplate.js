@@ -14,6 +14,7 @@ export default function withBoilerplate (component) {
           <style>
             body { 
               font-family: 'Bodoni Moda', serif; 
+              overflow-x: hidden;
             }
             canvas {
               position: fixed;

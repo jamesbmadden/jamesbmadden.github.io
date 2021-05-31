@@ -9,12 +9,22 @@ export default class ImageCard extends LitElement {
     title: { type: String },
     bio: { type: String },
     tags: { type: Array },
-    link: { type: String }
+    link: { type: String },
+    postUrl: { type: String }
   }};
 
   render () {
     return html`
-      <a href=${this.link}>
+      <a href=${this.link} @click=${event => {
+        event.preventDefault();
+        document.dispatchEvent(new CustomEvent('jbm-newpage', { detail: { type: 'article', url: this.link, data: {
+          title: this.title,
+          img: this.src,
+          tags: this.tag,
+          link: this.link,
+          article: this.postUrl
+        }} }));
+      }}>
         <img src=${this.src} alt="" tabindex="0" />
         <div class="image-description">
           <h2>${this.title}</h2>
