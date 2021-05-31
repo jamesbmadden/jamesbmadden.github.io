@@ -14,7 +14,7 @@ export default [
   },
   ...articles.map(article => {
     return {
-      path: `article/${article.title.replace(/ /g, '_')}.html`,
+      path: `article/${article.title.replace(/ /g, '_').toLowerCase()}.html`,
       template: articlePage(article)
     }
   })
