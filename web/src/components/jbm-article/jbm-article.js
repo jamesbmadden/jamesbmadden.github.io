@@ -15,10 +15,8 @@ export default class Article extends LitElement {
   render () {
     return html`
       <div class="jbm-article-root ${this.animate ? "animate": ""}">
-        <header class="jbm-article-header">
-          <img src=${this.img} />
-          <h1>${this.title}</h1>
-        </header>
+        <img class="jbm-article-header-img" src=${this.img} alt="" />
+        <h1 class="jbm-article-header">${this.title}</h1>
         <article class="jbm-article">
           <p>${this.article}</p>
         </article>
