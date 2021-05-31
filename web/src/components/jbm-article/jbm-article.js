@@ -1,6 +1,8 @@
 import { LitElement, html, css } from 'lit';
 import styles from './jbm-article.css';
 
+import '../md-render.js';
+
 export default class Article extends LitElement {
 
   static get styles () { return css([styles]) }
@@ -36,7 +38,7 @@ export default class Article extends LitElement {
         <img class="jbm-article-header-img" src=${this.img} alt="" />
         <h1 class="jbm-article-header">${this.title}</h1>
         <article class="jbm-article">
-          <p>${this.article}</p>
+          <md-render md=${this.article}></md-render>
         </article>
         <aside class="jbm-article-aside">
           <p>${this.tags}</p>
