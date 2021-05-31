@@ -20,6 +20,14 @@ export default class Article extends LitElement {
       // this.article will equal the URL in dynamic browser animation mode
       fetch(this.article).then(async article => this.article = await article.text());
     }
+
+    // when state goes back we need to get rid of the article
+    addEventListener('popstate', event => {
+      this.shadowRoot.querySelector('.jbm-article-root').classList.add('dissapear');
+      setTimeout(() => {
+        this.parentElement.removeChild(this);
+      }, 1000);
+    });
   }
 
   render () {

@@ -18,20 +18,35 @@ export default class Root extends LitElement {
   connectedCallback () {
     super.connectedCallback();
     // handle a new page event
-    document.addEventListener('jbm-newpage', event => {
-      const { data, type, url } = event.detail;
-      history.pushState({}, 'James Madden', url);
-      if (type === 'article') {
-        this.dissapear = true;
-        const article = document.createElement('jbm-article');
-        article.img = data.img;
-        article.title = data.title;
-        article.tags = data.tags;
-        article.animate = 'true';
-        article.article = data.article;
-        document.body.appendChild(article);
+    this.bindedHandleNewPage = this.handleNewPage.bind(this);
+    document.addEventListener('jbm-newpage', this.bindedHandleNewPage);
+    // if popstate do that
+    addEventListener('popstate', event => {
+
+      if (location.pathname === '/') {
+        this.dissapear = false;
+      } else {
+        this.handleNewPage({ detail: event.state }, true);
       }
+
     });
+  }
+
+  handleNewPage (event, ignorePushState) {
+    const { data, type, url } = event.detail;
+    if (!ignorePushState) {
+      history.pushState(event.detail, 'James Madden', url);
+    }
+    if (type === 'article') {
+      this.dissapear = true;
+      const article = document.createElement('jbm-article');
+      article.img = data.img;
+      article.title = data.title;
+      article.tags = data.tags;
+      article.animate = 'true';
+      article.article = data.article;
+      document.body.appendChild(article);
+    }
   }
 
   render () {

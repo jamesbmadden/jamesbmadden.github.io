@@ -24,13 +24,15 @@
         <body>
           <canvas alt=""></canvas>
           <!--lit-part 7YAPBe6kEXA=--><jbm-article      img="./assets/james_madden.png" title="James Madden Website" article="Originally, the background of this site made use of the Rust library WGPU, which implements the future WebGPU standard in rust, and works across platforms, including the web. However, after encountering issues with compilation to WebGL 2, I decided to simply rewrite the code in WebGL (the original version for better browser support) and the shaders in GLSL. Thanks to the naga shader library from WGPU, I was able to mostly cross-compile my wgsl shaders to glsl, with a few modifications to support the older version. The main code was simplified and rewritten in JavaScript. The end result was faster load times due to not having to load a huge WebAssembly binary, and proper support in all browsers." tags="Web,Lit,WebGL" animate="false"><shadow-root shadowroot="open"><style>@keyframes animatedEntry {
-  0% {
+  from {
     opacity: 0;
-    transform: translate(50vw);
+    transform: translate(100vw);
   }
-  33% {
+}
+@keyframes animatedExit {
+  to {
     opacity: 0;
-    transform: translate(50vw);
+    transform: translate(100vw);
   }
 }
 
@@ -46,7 +48,10 @@
   opacity: 1;
 }
 .jbm-article-root.animate {
-  animation: animatedEntry 1.5s;
+  animation: animatedEntry 1s;
+}
+.jbm-article-root.dissapear {
+  animation: animatedExit 1s;
 }
 
 .jbm-article, .jbm-article-header, .jbm-article-header-img {
