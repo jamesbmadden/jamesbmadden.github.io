@@ -19,7 +19,7 @@ export default function withBoilerplate (component) {
             canvas {
               position: fixed;
               top: 0; left: 0;
-              width: 100%; height: 100%;
+              width: 100vw; height: 100%;
             }
           </style>
           <title>James Madden</title>
