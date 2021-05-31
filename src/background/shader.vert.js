@@ -1,0 +1,1 @@
+export default "attribute vec4 aVertexPosition;\n\nuniform float time;\nvarying lowp float vTime;\n\nvoid main() {\n  gl_Position = aVertexPosition;\n  vTime = time;\n}";

@@ -1,4 +1,4 @@
-<!--lit-part Rokiw11oH/I=-->
+<!--lit-part baq7l9lfzx8=-->
     <!DOCTYPE html>
       <html>
         <head>
@@ -14,8 +14,7 @@
             canvas {
               position: fixed;
               top: 0; left: 0;
-              width: 100% !important; height: 100% !important;
-              pointer-events: none;
+              width: 100%; height: 100%;
             }
           </style>
           <title>James Madden</title>
@@ -363,9 +362,9 @@ img:hover ~ .image-description {
         </div>
       </section>
     <!--/lit-part--></shadow-root></jbm-root><!--/lit-part-->
-          <!-- Eventually we'll get lit to build to static ;) -->
-          <script src="./src/background/background.js"></script>
-          <!-- <script src="./src/script.js" type="module"></script> -->
+          <!-- lit builds static, but rehydrate the components for SPA functionality -->
+          <script src="./src/background/background.js" type="module"></script>
+          <script src="./src/script.js" type="module"></script>
         </body>
       </html>
   <!--/lit-part-->
