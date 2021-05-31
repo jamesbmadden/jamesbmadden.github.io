@@ -55,5 +55,6 @@
   border-radius: 1rem;
   text-align: justify;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  font-family: 'Lato', sans-serif;
 }
 .jbm-article p { margin: 0; }
