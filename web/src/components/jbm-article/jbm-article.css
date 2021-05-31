@@ -1,11 +1,13 @@
 @keyframes animatedEntry {
-  0% {
+  from {
     opacity: 0;
-    transform: translate(50vw);
+    transform: translate(100vw);
   }
-  33% {
+}
+@keyframes animatedExit {
+  to {
     opacity: 0;
-    transform: translate(50vw);
+    transform: translate(100vw);
   }
 }
 
@@ -21,7 +23,10 @@
   opacity: 1;
 }
 .jbm-article-root.animate {
-  animation: animatedEntry 1.5s;
+  animation: animatedEntry 1s;
+}
+.jbm-article-root.dissapear {
+  animation: animatedExit 1s;
 }
 
 .jbm-article, .jbm-article-header, .jbm-article-header-img {

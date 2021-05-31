@@ -4,7 +4,7 @@
 }
 .root.dissapear {
   opacity: 0;
-  transform: translate(-50vw);
+  transform: translate(-100vw);
 }
 
 .titles {
