@@ -26,7 +26,7 @@ export default function withBoilerplate (component) {
           <canvas alt="Plasma Background"></canvas>
           ${component}
           <!-- lit builds static, but rehydrate the components for SPA functionality -->
-          <script src="./src/background/background.js"></script>
+          <script src="./src/background/background.js" type="module"></script>
           <script src="./src/script.js" type="module"></script>
         </body>
       </html>

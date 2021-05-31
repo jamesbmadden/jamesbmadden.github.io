@@ -8,7 +8,7 @@ export default {
     /* ... */
   },
   plugins: [
-    ["snowpack-plugin-raw", { extensions: [".css"] }]
+    ["snowpack-plugin-raw", { extensions: [".css", ".vert", ".frag"] }]
   ],
   packageOptions: {
     /* ... */
