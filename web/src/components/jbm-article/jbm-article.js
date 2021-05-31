@@ -5,7 +5,7 @@ export default class Article extends LitElement {
 
   static get styles () { return css([styles]) }
   static get properties () { return {
-    src: { type: String },
+    img: { type: String },
     title: { type: String },
     article: { type: String },
     tags: { type: Array },
@@ -16,6 +16,7 @@ export default class Article extends LitElement {
     return html`
       <div class="jbm-article-root ${this.animate ? "animate": ""}">
         <header class="jbm-article-header">
+          <img src=${this.img} />
           <h1>${this.title}</h1>
         </header>
         <article class="jbm-article">
