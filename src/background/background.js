@@ -101,8 +101,8 @@ const genVertices = () => {
   
   let size = 2.0 / 100;
   
-  for (let x = 0; x < 101;  x++) {
-    for (let y = 0; y < 101; y++) {
+  for (let x = 0; x < 100;  x++) {
+    for (let y = 0; y < 100; y++) {
       
       let x_pos  = -1. + size * x;
       let y_pos = -1. + size * y;
