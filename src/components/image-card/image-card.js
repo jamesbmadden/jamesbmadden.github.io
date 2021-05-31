@@ -29,5 +29,3 @@ export default class ImageCard extends LitElement {
 }
 
 customElements.define('img-card', ImageCard);
-
-console.log(styles);

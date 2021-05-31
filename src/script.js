@@ -2,7 +2,7 @@ import { LitElement, html, css } from '../_snowpack/pkg/lit.js';
 import projects from './data/projects.js';
 import './components/image-card/image-card.js';
 
-import styles from './jm-root.css.js';
+import styles from './jbm-root.css.js';
 
 export default class Root extends LitElement {
 
