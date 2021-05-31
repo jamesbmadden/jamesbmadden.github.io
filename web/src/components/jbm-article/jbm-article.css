@@ -1,0 +1,17 @@
+.jbm-article-root {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.jbm-article-header {
+  grid-column: 1 / -1;
+}
+.jbm-article {
+  grid-column: 1 / 3;
+}
+.jbm-article-aside {
+  grid-column: 3 / -1;
+}
