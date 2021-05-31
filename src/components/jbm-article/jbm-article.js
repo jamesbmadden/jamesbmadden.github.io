@@ -16,15 +16,15 @@ export default class Article extends LitElement {
     super.connectedCallback();
 
     // if we are running in the browser, we have to dynamically load the article contents
-    if (this.animate) {
+    if (this.animate === 'true') {
       // this.article will equal the URL in dynamic browser animation mode
-      fetch(this.article).then(article => this.article = article);
+      fetch(this.article).then(async article => this.article = await article.text());
     }
   }
 
   render () {
     return html`
-      <div class="jbm-article-root ${this.animate ? "animate": ""}">
+      <div class="jbm-article-root ${this.animate === 'true' ? "animate": ""}">
         <img class="jbm-article-header-img" src=${this.img} alt="" />
         <h1 class="jbm-article-header">${this.title}</h1>
         <article class="jbm-article">

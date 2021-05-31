@@ -1,4 +1,4 @@
-<!--lit-part eWSAxjdmm1E=-->
+<!--lit-part X9JwyflMGjU=-->
     <!DOCTYPE html>
       <html>
         <head>
@@ -11,6 +11,7 @@
           <style>
             body { 
               font-family: 'Bodoni Moda', serif; 
+              overflow-x: hidden;
             }
             canvas {
               position: fixed;
@@ -22,7 +23,16 @@
         </head>
         <body>
           <canvas alt=""></canvas>
-          <!--lit-part 9WVmu7py/Rs=--><jbm-root><shadow-root shadowroot="open"><style>.titles {
+          <!--lit-part 9WVmu7py/Rs=--><jbm-root><shadow-root shadowroot="open"><style>.root {
+  transition: opacity 1s, transform 1s;
+  opacity: 1;
+}
+.root.dissapear {
+  opacity: 0;
+  transform: translate(-50vw);
+}
+
+.titles {
   mix-blend-mode: difference;
   color: white;
   position: absolute;
@@ -88,287 +98,297 @@
 
 img-card {
   position: relative;
-}</style><!--lit-part gjeG7ItFbic=-->
-      <div class="titles">
-        <h1>James Madden</h1>
-        <h2>Developer, designer.</h2>
-      </div>
-      <div class="offset-content"></div>
-      <h2 class="section-header">Projects</h2>
-      <section id="projects" style="padding-bottom: 100vh">
-        <div class="projects-grid">
-          <img-card      src="./assets/james_madden.png" title="James Madden Website" bio="Plasma background using WebGL" postUrl="/src/data/posts/james_madden_site.md" defer-hydration><!--lit-node 7--><shadow-root shadowroot="open"><style>img {
-  position: relative;
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 3;
-  cursor: pointer;
-
-  transform: translateY(0);
-  transition: transform 0.2s;
-}
-img:hover {
-  transform: translateY(-1rem);
-}
-
-.image-description {
-  position: absolute;
-  box-sizing: border-box;
-  padding: 1rem;
-  width: 110%; padding-top: 82.5%;
-  left: -5%; top: -5%;
-  background: white;
-  border-radius: 8px;
-  transform: scale(0) translateY(0);
-  transition: transform 0.2s;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  font-family: 'Lato', sans-serif;
-  z-index: 2;
-}
-img:hover ~ .image-description {
-  transform: scale(1) translateY(-1rem);
-}
-
-.bio {
-  font-size: 1.1rem;
-  color: #333;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 100%;
-  overflow: hidden;
-}
-
-.tags {
-  white-space: nowrap;
-  line-height: 3rem;
-  overflow-x: hidden;
-}
-.chip {
-  color: #444;
-  padding: 0.5rem;
-  margin: 0 0.5rem;
-  border: #444 2px solid;
-  border-radius: 10rem;
-}</style><!--lit-part JYH+FORAMUc=-->
-      <img src="./assets/james_madden.png" alt="" tabindex="0" /><!--lit-node 0-->
-      <div class="image-description">
-        <h2><!--lit-part-->James Madden Website<!--/lit-part--></h2>
-        <p class="bio"><!--lit-part-->Plasma background using WebGL<!--/lit-part--></p>
-        <p class="tags">
-          <!--lit-part--><!--lit-part pwl8V+m6EGo=-->
-            <span class="chip"><!--lit-part-->Web<!--/lit-part--></span>
-          <!--/lit-part--><!--lit-part pwl8V+m6EGo=-->
-            <span class="chip"><!--lit-part-->Lit<!--/lit-part--></span>
-          <!--/lit-part--><!--lit-part pwl8V+m6EGo=-->
-            <span class="chip"><!--lit-part-->WebGL<!--/lit-part--></span>
-          <!--/lit-part--><!--/lit-part-->
-        </p>
-      </div>
-    <!--/lit-part--></shadow-root></img-card>
-          <img-card      src="./assets/worldxplore.png" title="WorldXPlore" bio="Randomly generated game built with WGPU" postUrl="/src/data/posts/worldxplore.md" defer-hydration><!--lit-node 8--><shadow-root shadowroot="open"><style>img {
-  position: relative;
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 3;
-  cursor: pointer;
-
-  transform: translateY(0);
-  transition: transform 0.2s;
-}
-img:hover {
-  transform: translateY(-1rem);
-}
-
-.image-description {
-  position: absolute;
-  box-sizing: border-box;
-  padding: 1rem;
-  width: 110%; padding-top: 82.5%;
-  left: -5%; top: -5%;
-  background: white;
-  border-radius: 8px;
-  transform: scale(0) translateY(0);
-  transition: transform 0.2s;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  font-family: 'Lato', sans-serif;
-  z-index: 2;
-}
-img:hover ~ .image-description {
-  transform: scale(1) translateY(-1rem);
-}
-
-.bio {
-  font-size: 1.1rem;
-  color: #333;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 100%;
-  overflow: hidden;
-}
-
-.tags {
-  white-space: nowrap;
-  line-height: 3rem;
-  overflow-x: hidden;
-}
-.chip {
-  color: #444;
-  padding: 0.5rem;
-  margin: 0 0.5rem;
-  border: #444 2px solid;
-  border-radius: 10rem;
-}</style><!--lit-part JYH+FORAMUc=-->
-      <img src="./assets/worldxplore.png" alt="" tabindex="0" /><!--lit-node 0-->
-      <div class="image-description">
-        <h2><!--lit-part-->WorldXPlore<!--/lit-part--></h2>
-        <p class="bio"><!--lit-part-->Randomly generated game built with WGPU<!--/lit-part--></p>
-        <p class="tags">
-          <!--lit-part--><!--lit-part pwl8V+m6EGo=-->
-            <span class="chip"><!--lit-part-->Rust<!--/lit-part--></span>
-          <!--/lit-part--><!--lit-part pwl8V+m6EGo=-->
-            <span class="chip"><!--lit-part-->WebGPU<!--/lit-part--></span>
-          <!--/lit-part--><!--lit-part pwl8V+m6EGo=-->
-            <span class="chip"><!--lit-part-->Game<!--/lit-part--></span>
-          <!--/lit-part--><!--/lit-part-->
-        </p>
-      </div>
-    <!--/lit-part--></shadow-root></img-card>
-          <img-card      src="./assets/homework_app.png" title="Homework Manager" bio="Firebase-powered PWA built for managing homework" postUrl="/src/data/posts/homework_manager.md" defer-hydration><!--lit-node 9--><shadow-root shadowroot="open"><style>img {
-  position: relative;
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 3;
-  cursor: pointer;
-
-  transform: translateY(0);
-  transition: transform 0.2s;
-}
-img:hover {
-  transform: translateY(-1rem);
-}
-
-.image-description {
-  position: absolute;
-  box-sizing: border-box;
-  padding: 1rem;
-  width: 110%; padding-top: 82.5%;
-  left: -5%; top: -5%;
-  background: white;
-  border-radius: 8px;
-  transform: scale(0) translateY(0);
-  transition: transform 0.2s;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  font-family: 'Lato', sans-serif;
-  z-index: 2;
-}
-img:hover ~ .image-description {
-  transform: scale(1) translateY(-1rem);
-}
-
-.bio {
-  font-size: 1.1rem;
-  color: #333;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 100%;
-  overflow: hidden;
-}
-
-.tags {
-  white-space: nowrap;
-  line-height: 3rem;
-  overflow-x: hidden;
-}
-.chip {
-  color: #444;
-  padding: 0.5rem;
-  margin: 0 0.5rem;
-  border: #444 2px solid;
-  border-radius: 10rem;
-}</style><!--lit-part JYH+FORAMUc=-->
-      <img src="./assets/homework_app.png" alt="" tabindex="0" /><!--lit-node 0-->
-      <div class="image-description">
-        <h2><!--lit-part-->Homework Manager<!--/lit-part--></h2>
-        <p class="bio"><!--lit-part-->Firebase-powered PWA built for managing homework<!--/lit-part--></p>
-        <p class="tags">
-          <!--lit-part--><!--lit-part pwl8V+m6EGo=-->
-            <span class="chip"><!--lit-part-->Web<!--/lit-part--></span>
-          <!--/lit-part--><!--lit-part pwl8V+m6EGo=-->
-            <span class="chip"><!--lit-part-->PWA<!--/lit-part--></span>
-          <!--/lit-part--><!--lit-part pwl8V+m6EGo=-->
-            <span class="chip"><!--lit-part-->Firebase<!--/lit-part--></span>
-          <!--/lit-part--><!--/lit-part-->
-        </p>
-      </div>
-    <!--/lit-part--></shadow-root></img-card>
-          <img-card   src="./assets/more.svg" title="More" defer-hydration><!--lit-node 10--><shadow-root shadowroot="open"><style>img {
-  position: relative;
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 3;
-  cursor: pointer;
-
-  transform: translateY(0);
-  transition: transform 0.2s;
-}
-img:hover {
-  transform: translateY(-1rem);
-}
-
-.image-description {
-  position: absolute;
-  box-sizing: border-box;
-  padding: 1rem;
-  width: 110%; padding-top: 82.5%;
-  left: -5%; top: -5%;
-  background: white;
-  border-radius: 8px;
-  transform: scale(0) translateY(0);
-  transition: transform 0.2s;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  font-family: 'Lato', sans-serif;
-  z-index: 2;
-}
-img:hover ~ .image-description {
-  transform: scale(1) translateY(-1rem);
-}
-
-.bio {
-  font-size: 1.1rem;
-  color: #333;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 100%;
-  overflow: hidden;
-}
-
-.tags {
-  white-space: nowrap;
-  line-height: 3rem;
-  overflow-x: hidden;
-}
-.chip {
-  color: #444;
-  padding: 0.5rem;
-  margin: 0 0.5rem;
-  border: #444 2px solid;
-  border-radius: 10rem;
-}</style><!--lit-part JYH+FORAMUc=-->
-      <img src="./assets/more.svg" alt="" tabindex="0" /><!--lit-node 0-->
-      <div class="image-description">
-        <h2><!--lit-part-->More<!--/lit-part--></h2>
-        <p class="bio"><!--lit-part--><!--/lit-part--></p>
-        <p class="tags">
-          <!--lit-part--><!--/lit-part-->
-        </p>
-      </div>
-    <!--/lit-part--></shadow-root></img-card>
+}</style><!--lit-part Z/ZIL//IU3k=-->
+      <div class="root "><!--lit-node 0-->
+        <div class="titles">
+          <h1>James Madden</h1>
+          <h2>Developer, designer.</h2>
         </div>
-      </section>
+        <div class="offset-content"></div>
+        <h2 class="section-header">Projects</h2>
+        <section id="projects" style="padding-bottom: 12rem">
+          <div class="projects-grid">
+            <img-card       src="./assets/james_madden.png" title="James Madden Website" bio="Plasma background using WebGL" postUrl="/src/data/posts/james_madden_site.md" link="/article/james_madden_website" defer-hydration><!--lit-node 8--><shadow-root shadowroot="open"><style>img {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  cursor: pointer;
+
+  transform: translateY(0);
+  transition: transform 0.2s;
+}
+img:hover {
+  transform: translateY(-1rem);
+}
+
+.image-description {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 110%; padding-top: 82.5%;
+  left: -5%; top: -5%;
+  background: white;
+  border-radius: 8px;
+  transform: scale(0) translateY(0);
+  transition: transform 0.2s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  font-family: 'Lato', sans-serif;
+  z-index: 2;
+}
+img:hover ~ .image-description {
+  transform: scale(1) translateY(-1rem);
+}
+
+.bio {
+  font-size: 1.1rem;
+  color: #333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+}
+
+.tags {
+  white-space: nowrap;
+  line-height: 3rem;
+  overflow-x: hidden;
+}
+.chip {
+  color: #444;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border: #444 2px solid;
+  border-radius: 10rem;
+}</style><!--lit-part OpGJSCPttD4=-->
+      <a href="/article/james_madden_website" ><!--lit-node 0-->
+        <img src="./assets/james_madden.png" alt="" tabindex="0" /><!--lit-node 1-->
+        <div class="image-description">
+          <h2><!--lit-part-->James Madden Website<!--/lit-part--></h2>
+          <p class="bio"><!--lit-part-->Plasma background using WebGL<!--/lit-part--></p>
+          <p class="tags">
+            <!--lit-part--><!--lit-part p7RsH6lYvkU=-->
+              <span class="chip"><!--lit-part-->Web<!--/lit-part--></span>
+            <!--/lit-part--><!--lit-part p7RsH6lYvkU=-->
+              <span class="chip"><!--lit-part-->Lit<!--/lit-part--></span>
+            <!--/lit-part--><!--lit-part p7RsH6lYvkU=-->
+              <span class="chip"><!--lit-part-->WebGL<!--/lit-part--></span>
+            <!--/lit-part--><!--/lit-part-->
+          </p>
+        </div>
+      </a>
+    <!--/lit-part--></shadow-root></img-card>
+            <img-card       src="./assets/worldxplore.png" title="WorldXPlore" bio="Randomly generated game built with WGPU" postUrl="/src/data/posts/worldxplore.md" link="/article/worldxplore" defer-hydration><!--lit-node 9--><shadow-root shadowroot="open"><style>img {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  cursor: pointer;
+
+  transform: translateY(0);
+  transition: transform 0.2s;
+}
+img:hover {
+  transform: translateY(-1rem);
+}
+
+.image-description {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 110%; padding-top: 82.5%;
+  left: -5%; top: -5%;
+  background: white;
+  border-radius: 8px;
+  transform: scale(0) translateY(0);
+  transition: transform 0.2s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  font-family: 'Lato', sans-serif;
+  z-index: 2;
+}
+img:hover ~ .image-description {
+  transform: scale(1) translateY(-1rem);
+}
+
+.bio {
+  font-size: 1.1rem;
+  color: #333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+}
+
+.tags {
+  white-space: nowrap;
+  line-height: 3rem;
+  overflow-x: hidden;
+}
+.chip {
+  color: #444;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border: #444 2px solid;
+  border-radius: 10rem;
+}</style><!--lit-part OpGJSCPttD4=-->
+      <a href="/article/worldxplore" ><!--lit-node 0-->
+        <img src="./assets/worldxplore.png" alt="" tabindex="0" /><!--lit-node 1-->
+        <div class="image-description">
+          <h2><!--lit-part-->WorldXPlore<!--/lit-part--></h2>
+          <p class="bio"><!--lit-part-->Randomly generated game built with WGPU<!--/lit-part--></p>
+          <p class="tags">
+            <!--lit-part--><!--lit-part p7RsH6lYvkU=-->
+              <span class="chip"><!--lit-part-->Rust<!--/lit-part--></span>
+            <!--/lit-part--><!--lit-part p7RsH6lYvkU=-->
+              <span class="chip"><!--lit-part-->WebGPU<!--/lit-part--></span>
+            <!--/lit-part--><!--lit-part p7RsH6lYvkU=-->
+              <span class="chip"><!--lit-part-->Game<!--/lit-part--></span>
+            <!--/lit-part--><!--/lit-part-->
+          </p>
+        </div>
+      </a>
+    <!--/lit-part--></shadow-root></img-card>
+            <img-card       src="./assets/homework_app.png" title="Homework Manager" bio="Firebase-powered PWA built for managing homework" postUrl="/src/data/posts/homework_manager.md" link="/article/homework_manager" defer-hydration><!--lit-node 10--><shadow-root shadowroot="open"><style>img {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  cursor: pointer;
+
+  transform: translateY(0);
+  transition: transform 0.2s;
+}
+img:hover {
+  transform: translateY(-1rem);
+}
+
+.image-description {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 110%; padding-top: 82.5%;
+  left: -5%; top: -5%;
+  background: white;
+  border-radius: 8px;
+  transform: scale(0) translateY(0);
+  transition: transform 0.2s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  font-family: 'Lato', sans-serif;
+  z-index: 2;
+}
+img:hover ~ .image-description {
+  transform: scale(1) translateY(-1rem);
+}
+
+.bio {
+  font-size: 1.1rem;
+  color: #333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+}
+
+.tags {
+  white-space: nowrap;
+  line-height: 3rem;
+  overflow-x: hidden;
+}
+.chip {
+  color: #444;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border: #444 2px solid;
+  border-radius: 10rem;
+}</style><!--lit-part OpGJSCPttD4=-->
+      <a href="/article/homework_manager" ><!--lit-node 0-->
+        <img src="./assets/homework_app.png" alt="" tabindex="0" /><!--lit-node 1-->
+        <div class="image-description">
+          <h2><!--lit-part-->Homework Manager<!--/lit-part--></h2>
+          <p class="bio"><!--lit-part-->Firebase-powered PWA built for managing homework<!--/lit-part--></p>
+          <p class="tags">
+            <!--lit-part--><!--lit-part p7RsH6lYvkU=-->
+              <span class="chip"><!--lit-part-->Web<!--/lit-part--></span>
+            <!--/lit-part--><!--lit-part p7RsH6lYvkU=-->
+              <span class="chip"><!--lit-part-->PWA<!--/lit-part--></span>
+            <!--/lit-part--><!--lit-part p7RsH6lYvkU=-->
+              <span class="chip"><!--lit-part-->Firebase<!--/lit-part--></span>
+            <!--/lit-part--><!--/lit-part-->
+          </p>
+        </div>
+      </a>
+    <!--/lit-part--></shadow-root></img-card>
+            <img-card   src="./assets/more.svg" title="More" defer-hydration><!--lit-node 11--><shadow-root shadowroot="open"><style>img {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  cursor: pointer;
+
+  transform: translateY(0);
+  transition: transform 0.2s;
+}
+img:hover {
+  transform: translateY(-1rem);
+}
+
+.image-description {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 110%; padding-top: 82.5%;
+  left: -5%; top: -5%;
+  background: white;
+  border-radius: 8px;
+  transform: scale(0) translateY(0);
+  transition: transform 0.2s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  font-family: 'Lato', sans-serif;
+  z-index: 2;
+}
+img:hover ~ .image-description {
+  transform: scale(1) translateY(-1rem);
+}
+
+.bio {
+  font-size: 1.1rem;
+  color: #333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+}
+
+.tags {
+  white-space: nowrap;
+  line-height: 3rem;
+  overflow-x: hidden;
+}
+.chip {
+  color: #444;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border: #444 2px solid;
+  border-radius: 10rem;
+}</style><!--lit-part OpGJSCPttD4=-->
+      <a href="" ><!--lit-node 0-->
+        <img src="./assets/more.svg" alt="" tabindex="0" /><!--lit-node 1-->
+        <div class="image-description">
+          <h2><!--lit-part-->More<!--/lit-part--></h2>
+          <p class="bio"><!--lit-part--><!--/lit-part--></p>
+          <p class="tags">
+            <!--lit-part--><!--/lit-part-->
+          </p>
+        </div>
+      </a>
+    <!--/lit-part--></shadow-root></img-card>
+          </div>
+        </section>
+      </div>
     <!--/lit-part--></shadow-root></jbm-root><!--/lit-part-->
           <!-- lit builds static, but rehydrate the components for SPA functionality -->
           <script src="/src/background/background.js" type="module"></script>
