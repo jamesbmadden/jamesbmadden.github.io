@@ -87,6 +87,21 @@
 }
 .jbm-article tr {
   display: flex;
+}
+
+@media (max-width: 480px) {
+  .jbm-article-root {
+    grid-template-columns: 1fr;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .jbm-article-header {
+    text-align: center;
+  }
+  .jbm-article-header-img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 }</style><!--lit-part z2AkHIneQPA=-->
       <div class="jbm-article-root "><!--lit-node 0-->
         <img class="jbm-article-header-img" src="./assets/james_madden.png" alt="" /><!--lit-node 1-->
