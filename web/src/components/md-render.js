@@ -9,6 +9,10 @@ export class Markdown extends LitElement {
     }
   }
 
+  createRenderRoot() {
+    return this;
+  }
+
   render () {
     return html([marked(this.md)]);
   }
