@@ -11,7 +11,3 @@ Currently, WorldXPlore has only been tested on MacOS, but should be compilable o
 ## 🧑🏼‍💻 Technical Details
 
 WorldXPlore is written in Rust, and graphics are handled by the WGPU library, a cross-platform Rust implementation of the future WebGPU Standard. UI and text rendering is handled through a custom framework that takes a component-based interface and converts them to vertices for WGPU to render. Shaders handle smooth camera movement but vertices are updated every block moved so that the entire world doesn't have to be in memory at once.
-
-```rust
-println!("test");
-```
