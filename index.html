@@ -80,6 +80,23 @@
   margin-left: 1rem; 
   border-radius: 0.5rem;
 }
+
+.section-header.centered {
+  text-align: center;
+  padding-left: 0;
+}
+.section-header.centered::before {
+  position: relative;
+  width: 2rem;
+  top: -0.5rem;
+  left: -1rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+.section-header.centered::after {
+  width: 2rem;
+}
+
 .projects-grid {
   box-sizing: border-box;
   padding: 0 1.5rem;
@@ -87,7 +104,6 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.5rem;
 }
-
 @media (max-width: 750px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -98,7 +114,23 @@
 
 img-card {
   position: relative;
-}</style><!--lit-part Z/ZIL//IU3k=-->
+}
+
+#about-me {
+  z-index: 1;
+  background: #fff;
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: justify;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}</style><!--lit-part JoN+qPUVCi8=-->
       <div class="root "><!--lit-node 0-->
         <div class="titles">
           <h1>James Madden</h1>
@@ -387,6 +419,20 @@ img:hover ~ .image-description {
       </a>
     <!--/lit-part--></shadow-root></img-card>
           </div>
+        </section>
+        <h2 class="section-header centered">About Me</h2>
+        <section id="about-me">
+          Hi! My name is James. I'm a 17-year old programmer and designer from Vancouver, Canada.<br>
+          I started making websites in 2017 and since then I've made countless tools and apps to solve problems in my life.
+          From learning lines in a grade 9 performance of <i>A Midsummer Night's Dream</i> to
+          <a href="/article/homework_manager">staying on top of my homework</a> to fundraising through online card sales, I've learned
+          different technologies, languages, and APIs.
+          <hr>
+          From informational static sites to complex web apps (or somewhere in between, 
+          <a href="/article/james_madden_website">like this site</a>), I can design and develop beautiful and feature-rich websites.
+          <br>
+          Stay a while, check out some of my projects, tech demos, and designs, or get in contact below if you're interested in
+          a website or just a chat!
         </section>
       </div>
     <!--/lit-part--></shadow-root></jbm-root><!--/lit-part-->
