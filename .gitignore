@@ -2,5 +2,6 @@ target
 .DS_Store
 node_modules
 web/build
+web/src/index.html
 
 rust

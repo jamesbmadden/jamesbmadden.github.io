@@ -18,5 +18,6 @@ export default {
   },
   buildOptions: {
     /* ... */
+    htmlFragments: true
   },
 };

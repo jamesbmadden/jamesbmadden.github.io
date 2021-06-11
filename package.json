@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "snowpack dev",
+    "start": "cp web/build/index.html web/index.html && snowpack dev && rm web/index.html",
     "build": "snowpack build && node ssr/render.js",
     "deploy": "gh-pages -d web/build -b master"
   },
