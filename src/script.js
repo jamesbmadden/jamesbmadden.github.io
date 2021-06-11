@@ -46,6 +46,9 @@ export default class Root extends LitElement {
       article.animate = 'true';
       article.article = data.article;
       document.body.appendChild(article);
+      scrollTo({
+        top: 0, left: 0, behavior: 'smooth'
+      });
     }
   }
 
