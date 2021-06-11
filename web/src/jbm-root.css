@@ -55,6 +55,23 @@
   margin-left: 1rem; 
   border-radius: 0.5rem;
 }
+
+.section-header.centered {
+  text-align: center;
+  padding-left: 0;
+}
+.section-header.centered::before {
+  position: relative;
+  width: 2rem;
+  top: -0.5rem;
+  left: -1rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+.section-header.centered::after {
+  width: 2rem;
+}
+
 .projects-grid {
   box-sizing: border-box;
   padding: 0 1.5rem;
@@ -62,7 +79,6 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.5rem;
 }
-
 @media (max-width: 750px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -73,4 +89,20 @@
 
 img-card {
   position: relative;
+}
+
+#about-me {
+  z-index: 1;
+  background: #fff;
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: justify;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }

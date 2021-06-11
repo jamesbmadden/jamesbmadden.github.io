@@ -66,6 +66,20 @@ export default class Root extends LitElement {
             <img-card src="./assets/more.svg" title="More"></img-card>
           </div>
         </section>
+        <h2 class="section-header centered">About Me</h2>
+        <section id="about-me">
+          Hi! My name is James. I'm a 17-year old programmer and designer from Vancouver, Canada.<br>
+          I started making websites in 2017 and since then I've made countless tools and apps to solve problems in my life.
+          From learning lines in a grade 9 performance of <i>A Midsummer Night's Dream</i> to
+          <a href="/article/homework_manager">staying on top of my homework</a> to fundraising through online card sales, I've learned
+          different technologies, languages, and APIs.
+          <hr>
+          From informational static sites to complex web apps (or somewhere in between, 
+          <a href="/article/james_madden_website">like this site</a>), I can design and develop beautiful and feature-rich websites.
+          <br>
+          Stay a while, check out some of my projects, tech demos, and designs, or get in contact below if you're interested in
+          a website or just a chat!
+        </section>
       </div>
     `;
   }
