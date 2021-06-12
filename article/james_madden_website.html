@@ -23,7 +23,7 @@
         </head>
         <body>
           <canvas alt=""></canvas>
-          <!--lit-part 7YAPBe6kEXA=--><jbm-article      img="./assets/james_madden.png" title="James Madden Website" article="Originally, the background of this site made use of the Rust library WGPU, which implements the future WebGPU standard in rust, and works across platforms, including the web. However, after encountering issues with compilation to WebGL 2, I decided to simply rewrite the code in WebGL (the original version for better browser support) and the shaders in GLSL. Thanks to the naga shader library from WGPU, I was able to mostly cross-compile my wgsl shaders to glsl, with a few modifications to support the older version. The main code was simplified and rewritten in JavaScript. The end result was faster load times due to not having to load a huge WebAssembly binary, and proper support in all browsers." tags="Web,Lit,WebGL" animate="false"><shadow-root shadowroot="open"><style>@keyframes animatedEntry {
+          <!--lit-part K9cOEe7qcpg=--><jbm-article      img="./assets/james_madden.png" title="James Madden Website" article="Originally, the background of this site made use of the Rust library WGPU, which implements the future WebGPU standard in rust, and works across platforms, including the web. However, after encountering issues with compilation to WebGL 2, I decided to simply rewrite the code in WebGL (the original version for better browser support) and the shaders in GLSL. Thanks to the naga shader library from WGPU, I was able to mostly cross-compile my wgsl shaders to glsl, with a few modifications to support the older version. The main code was simplified and rewritten in JavaScript. The end result was faster load times due to not having to load a huge WebAssembly binary, and proper support in all browsers." tags="[&#39;Web&#39;,&#39;Lit&#39;,&#39;WebGL&#39;]" animate="false"><shadow-root shadowroot="open"><style>@keyframes animatedEntry {
   from {
     opacity: 0;
     transform: translate(100vw);
@@ -59,6 +59,7 @@
 }
 .jbm-article-aside {
   grid-column: 3 / -1;
+  font-family: 'Lato', sans-serif;
 }
 
 .jbm-article-header-img {
@@ -89,6 +90,26 @@
   display: flex;
 }
 
+.jbm-article-tags-header {
+  font-size: 1.5rem;
+  color: white;
+  mix-blend-mode: difference;
+  margin: 0;
+}
+.jbm-article-tags {
+  line-height: 3rem;
+  text-align: justify;
+}
+.jbm-article-chip {
+  color: #fff;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border: #fff 2px solid;
+  border-radius: 10rem;
+  background: rgba(128, 128, 128, 0.5);
+  mix-blend-mode: difference;
+}
+
 @media (max-width: 480px) {
   .jbm-article-root {
     grid-template-columns: 1fr;
@@ -102,7 +123,7 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
-}</style><!--lit-part z2AkHIneQPA=-->
+}</style><!--lit-part sV3bbyHTD+M=-->
       <div class="jbm-article-root "><!--lit-node 0-->
         <img class="jbm-article-header-img" src="./assets/james_madden.png" alt="" /><!--lit-node 1-->
         <h1 class="jbm-article-header"><!--lit-part-->James Madden Website<!--/lit-part--></h1>
@@ -111,7 +132,10 @@
 <!--/lit-part--></shadow-root></md-render>
         </article>
         <aside class="jbm-article-aside">
-          <p><!--lit-part--><!--/lit-part--></p>
+          <h2 class="jbm-article-tags-header">Tags</h2>
+          <p class="jbm-article-tags">
+            <!--lit-part--><!--/lit-part-->
+          </p>
         </aside>
       </div>
     <!--/lit-part--></shadow-root></jbm-article><!--/lit-part-->

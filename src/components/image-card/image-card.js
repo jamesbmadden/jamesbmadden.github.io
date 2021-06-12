@@ -20,7 +20,7 @@ export default class ImageCard extends LitElement {
         document.dispatchEvent(new CustomEvent('jbm-newpage', { detail: { type: 'article', url: this.link, data: {
           title: this.title,
           img: this.src,
-          tags: this.tag,
+          tags: this.tags,
           link: this.link,
           article: this.postUrl
         }} }));

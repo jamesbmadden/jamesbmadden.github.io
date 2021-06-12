@@ -23,7 +23,7 @@
         </head>
         <body>
           <canvas alt=""></canvas>
-          <!--lit-part ujoz4VZWHyg=--><jbm-article      img="./assets/worldxplore.png" title="WorldXPlore" article="## 👾 A randomly generated 2d game world, written in [Rust](https://www.rust-lang.org) and [WGPU](https://wgpu.rs). 🗺
+          <!--lit-part 4CPp8crZoL8=--><jbm-article      img="./assets/worldxplore.png" title="WorldXPlore" article="## 👾 A randomly generated 2d game world, written in [Rust](https://www.rust-lang.org) and [WGPU](https://wgpu.rs). 🗺
 
 | ![](https://raw.githubusercontent.com/jamesbmadden/worldxplore/master/.github/readme_img.png) | ![](https://raw.githubusercontent.com/jamesbmadden/worldxplore/master/.github/readme_inv.png) |
 :-------------------------:|:-------------------------:
@@ -35,7 +35,7 @@ Currently, WorldXPlore has only been tested on MacOS, but should be compilable o
 
 ## 🧑🏼‍💻 Technical Details
 
-WorldXPlore is written in Rust, and graphics are handled by the WGPU library, a cross-platform Rust implementation of the future WebGPU Standard. UI and text rendering is handled through a custom framework that takes a component-based interface and converts them to vertices for WGPU to render. Shaders handle smooth camera movement but vertices are updated every block moved so that the entire world doesn&#39;t have to be in memory at once." tags="Rust,WebGPU,Game" animate="false"><shadow-root shadowroot="open"><style>@keyframes animatedEntry {
+WorldXPlore is written in Rust, and graphics are handled by the WGPU library, a cross-platform Rust implementation of the future WebGPU Standard. UI and text rendering is handled through a custom framework that takes a component-based interface and converts them to vertices for WGPU to render. Shaders handle smooth camera movement but vertices are updated every block moved so that the entire world doesn&#39;t have to be in memory at once." tags="[&#39;Rust&#39;,&#39;WebGPU&#39;,&#39;Game&#39;]" animate="false"><shadow-root shadowroot="open"><style>@keyframes animatedEntry {
   from {
     opacity: 0;
     transform: translate(100vw);
@@ -71,6 +71,7 @@ WorldXPlore is written in Rust, and graphics are handled by the WGPU library, a 
 }
 .jbm-article-aside {
   grid-column: 3 / -1;
+  font-family: 'Lato', sans-serif;
 }
 
 .jbm-article-header-img {
@@ -101,6 +102,26 @@ WorldXPlore is written in Rust, and graphics are handled by the WGPU library, a 
   display: flex;
 }
 
+.jbm-article-tags-header {
+  font-size: 1.5rem;
+  color: white;
+  mix-blend-mode: difference;
+  margin: 0;
+}
+.jbm-article-tags {
+  line-height: 3rem;
+  text-align: justify;
+}
+.jbm-article-chip {
+  color: #fff;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border: #fff 2px solid;
+  border-radius: 10rem;
+  background: rgba(128, 128, 128, 0.5);
+  mix-blend-mode: difference;
+}
+
 @media (max-width: 480px) {
   .jbm-article-root {
     grid-template-columns: 1fr;
@@ -114,7 +135,7 @@ WorldXPlore is written in Rust, and graphics are handled by the WGPU library, a 
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
-}</style><!--lit-part z2AkHIneQPA=-->
+}</style><!--lit-part sV3bbyHTD+M=-->
       <div class="jbm-article-root "><!--lit-node 0-->
         <img class="jbm-article-header-img" src="./assets/worldxplore.png" alt="" /><!--lit-node 1-->
         <h1 class="jbm-article-header"><!--lit-part-->WorldXPlore<!--/lit-part--></h1>
@@ -151,7 +172,10 @@ WorldXPlore is written in Rust, and graphics are handled by the WGPU library, a 
 <!--/lit-part--></shadow-root></md-render>
         </article>
         <aside class="jbm-article-aside">
-          <p><!--lit-part--><!--/lit-part--></p>
+          <h2 class="jbm-article-tags-header">Tags</h2>
+          <p class="jbm-article-tags">
+            <!--lit-part--><!--/lit-part-->
+          </p>
         </aside>
       </div>
     <!--/lit-part--></shadow-root></jbm-article><!--/lit-part-->
