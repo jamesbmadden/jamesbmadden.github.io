@@ -83,6 +83,10 @@ export default class Root extends LitElement {
           Stay a while, check out some of my projects, tech demos, and designs, or get in contact below if you're interested in
           a website or just a chat!
         </section>
+        <div class="about-me-buttons">
+          <a href="https://instagram.com/designbyjamesmadden" target="_blank" rel="noreferrer noopener"><button id="instagram-button">Instagram</button></a>
+          <a href="mailto:jamesbmadden@gmail.com"><button id="email-button">Email</button></a>
+        </div>
       </div>
     `;
   }
