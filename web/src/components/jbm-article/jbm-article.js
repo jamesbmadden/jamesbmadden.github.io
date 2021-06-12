@@ -33,6 +33,12 @@ export default class Article extends LitElement {
   }
 
   render () {
+
+    // if running in SSR, fix the tags
+    if (this.animate !== 'true') {
+      this.tags = JSON.parse(this.tags);
+    }
+
     return html`
       <div class="jbm-article-root ${this.animate === 'true' ? "animate": ""}">
         <img class="jbm-article-header-img" src=${this.img} alt="" />
@@ -41,7 +47,12 @@ export default class Article extends LitElement {
           <md-render md=${this.article}></md-render>
         </article>
         <aside class="jbm-article-aside">
-          <p>${this.tags}</p>
+          <h2 class="jbm-article-tags-header">Tags</h2>
+          <p class="jbm-article-tags">
+            ${this.tags?.map(tag => html`
+              <span class="jbm-article-chip">${tag}</span>
+            `)}
+          </p>
         </aside>
       </div>
     `;
