@@ -3,6 +3,7 @@ import projects from './data/projects.js';
 
 import './components/image-card/image-card.js';
 import './components/jbm-article/jbm-article.js';
+import './components/jbm-link.js';
 
 import styles from './jbm-root.css.js';
 
@@ -74,11 +75,11 @@ export default class Root extends LitElement {
           Hi! My name is James. I'm a 17-year old programmer and designer from Vancouver, Canada.<br>
           I started making websites in 2017 and since then I've made countless tools and apps to solve problems in my life.
           From learning lines in a grade 9 performance of <i>A Midsummer Night's Dream</i> to
-          <a href="/article/homework_manager">staying on top of my homework</a> to fundraising through online card sales, I've learned
+          <jbm-link url="/article/homework_manager" text="staying on top of my homework" applyStyles=${true}></jbm-link> to fundraising through online card sales, I've learned
           different technologies, languages, and APIs.
           <hr>
           From informational static sites to complex web apps (or somewhere in between, 
-          <a href="/article/james_madden_website">like this site</a>), I can design and develop beautiful and feature-rich websites.
+          <jbm-link url="/article/james_madden_website" text="like this site" applyStyles=${true}></jbm-link>), I can design and develop beautiful and feature-rich websites.
           <br>
           Stay a while, check out some of my projects, tech demos, and designs, or get in contact below if you're interested in
           a website or just a chat!
