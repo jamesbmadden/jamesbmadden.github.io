@@ -71,7 +71,7 @@ export default class Root extends LitElement {
           </div>
         </section>
         <h2 class="section-header centered">About Me</h2>
-        <section id="about-me">
+        <section id="about-me" style="padding-bottom: 1rem">
           Hi! My name is James. I'm a 17-year old programmer and designer from Vancouver, Canada.<br>
           I started making websites in 2017 and since then I've made countless tools and apps to solve problems in my life.
           From learning lines in a grade 9 performance of <i>A Midsummer Night's Dream</i> to
