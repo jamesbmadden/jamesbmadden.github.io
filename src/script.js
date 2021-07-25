@@ -84,10 +84,17 @@ export default class Root extends LitElement {
           Stay a while, check out some of my projects, tech demos, and designs, or get in contact below if you're interested in
           a website or just a chat!
         </section>
-        <div class="about-me-buttons">
+        <div class="about-me-buttons" style="padding-bottom: 1rem">
           <a href="https://instagram.com/designbyjamesmadden" target="_blank" rel="noreferrer noopener"><button id="instagram-button">Instagram</button></a>
           <a href="mailto:jamesbmadden@gmail.com"><button id="email-button">Email</button></a>
         </div>
+        <h2 class="section-header">Some Other Things I've Been Up To</h2>
+        <section id="other" style="margin-bottom: 12rem">
+          <div class="projects-grid">
+            <img-card src="./assets/tictactoe.jpg" title="Tic Tac Toe" bio="Animated Tic Tac Toe Game, Built with Rust and WGPU." .tags=${projects[1].tags} postUrl=${projects[0].post} link="/article/tictactoe"></img-card>
+            <img-card src="./assets/rosemary_bread.jpg" title="Rosemary Bread" bio="Bread Baking 🥰" .tags=${['Baking', 'Bread', 'Yeast']} postUrl=${projects[0].post} link="/article/rosemary_bread"></img-card>
+          </div>
+        </section>
       </div>
     `;
   }
